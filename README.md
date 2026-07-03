@@ -1,19 +1,22 @@
-# CodeAlpha_Iris_Classification
+# CodeAlpha Iris Classification
 
-## Project Description
-This project focuses on building a machine learning model to classify Iris flower species using the classic Iris dataset. The goal is to explore the dataset, understand its patterns, visualize the features, train a classification model, and evaluate its performance.
+## Overview
+This repository demonstrates a complete machine learning workflow for classifying Iris flower species using the classic Iris dataset. The project is implemented as a Jupyter Notebook and covers data loading, exploration, visualization, model training, and performance evaluation.
 
-The work is implemented in a Jupyter Notebook and demonstrates a complete beginner-friendly machine learning workflow.
-
-## Project Goal
-The main objective of this project is to:
+## Objectives
 - Load and inspect the Iris dataset
-- Explore the dataset statistically and visually
-- Build a classification model
-- Measure model accuracy and performance
-- Present the workflow clearly in a notebook
+- Explore feature distributions and relationships
+- Visualize class separation with charts
+- Prepare data for supervised learning
+- Train and evaluate classification models
+- Present the workflow in a reproducible notebook
 
-## Technologies Used
+## Dataset
+- `Iris.csv` contains the classic Iris dataset used in this project
+- Includes 150 samples with 4 features and 3 species labels
+- No missing values are present in the dataset
+
+## Technologies
 - Python
 - Jupyter Notebook
 - pandas
@@ -28,33 +31,39 @@ CodeAlpha_Iris_Classification/
 ├── Iris_Classification.ipynb   # Main notebook with the full workflow
 ├── Iris.csv                    # Dataset used for the project
 ├── README.md                   # Project overview and instructions
+├── requirements.txt            # Python dependencies
+└── .gitignore
 ```
 
-## Steps Completed So Far
-1. Loaded the Iris dataset
-2. Explored the data structure and columns
-3. Visualized the relationships between features
-4. Prepared the data for model training
-5. Trained a classification model
-6. Evaluated the model performance
-
-## Why This Dataset Was Chosen
-The Iris dataset is a well-known benchmark dataset in machine learning. It is widely used for classification tasks because it contains clear examples of different flower species and is ideal for demonstrating supervised learning.
+## Notebook Workflow
+1. Load and inspect the dataset
+2. Clean and preprocess data
+3. Visualize feature distributions and species relationships
+4. Split data into training and testing sets
+5. Train classification models
+   - Decision Tree Classifier
+   - Random Forest Classifier
+6. Evaluate model performance using accuracy, confusion matrix, and classification report
 
 ## Installation
-To run this project locally, install the required dependencies:
+Install dependencies from `requirements.txt` if available. Otherwise install the required libraries manually:
 
 ```bash
 pip install pandas numpy matplotlib seaborn scikit-learn jupyter
 ```
 
-## How to Run the Project
-1. Open the notebook file: `Iris_Classification.ipynb`
-2. Run the cells in order
-3. Make sure the required Python libraries are installed
+## Running the Project
+1. Activate your Python environment
+2. Launch Jupyter Notebook or Jupyter Lab
+   ```bash
+   jupyter notebook Iris_Classification.ipynb
+   ```
+3. Open `Iris_Classification.ipynb`
+4. Run the notebook cells in order
 
 ## Results
-The notebook demonstrates how a simple classifier can learn to distinguish between Iris flower species based on their features. The final model is evaluated using accuracy metrics, and the workflow shows both data exploration and prediction steps.
+The notebook illustrates how a supervised learning model can distinguish Iris species using sepal and petal measurements. It includes exploratory visualizations and evaluation results such as confusion matrices and classification reports.
 
 ## Notes
-This project is a practical example of applying data analysis and machine learning concepts to a real dataset.
+- This project is a good introduction to exploratory data analysis and classification with scikit-learn.
+- For reproducibility, add exact package versions to `requirements.txt`.
